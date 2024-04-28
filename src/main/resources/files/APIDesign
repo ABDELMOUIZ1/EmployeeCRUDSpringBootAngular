@@ -1,0 +1,23 @@
+1. **Client sends HTTP requests** to the server.
+
+2. **Controller receives requests**:
+   - Controllers handle incoming HTTP requests.
+   - They contain methods mapped to specific endpoints.
+   - Extract relevant information from the request.
+   - Invoke corresponding methods in the service layer.
+
+3. **Service layer executes business logic**:
+   - Encapsulates core functionality and business rules.
+   - Orchestrates interactions with the data layer.
+   - Performs tasks like data validation and CRUD operations.
+   - Delegates tasks from controllers to appropriate methods.
+
+4. **Data layer interacts with the database**:
+   - Manages data persistence.
+   - Interacts with the database using repositories, DAOs, or ORM frameworks.
+   - Performs database operations like querying, updating, or deleting data.
+
+5. **Response sent back to the client**:
+   - Controllers generate HTTP responses based on request processing.
+   - Responses include HTTP status codes and relevant data or error messages.
+   - Sent back to the client to complete the request-response cycle.
